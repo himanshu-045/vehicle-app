@@ -32,8 +32,8 @@ def save_response_content(response, destination):
                 f.write(chunk)
 
 
-MODEL_ID = "https://drive.google.com/file/d/1L0uKHtHZcdRkfj7q_RJexSY88-1I0FzM/view?usp=sharing"
-ENCODER_ID = "https://drive.google.com/file/d/1GPsCS4HfX6zqQSVd8baVZsG496XIS8k2/view?usp=drive_link"
+MODEL_ID = "1L0uKHtHZcdRkfj7q_RJexSY88-1I0FzM"
+ENCODER_ID = "1GPsCS4HfX6zqQSVd8baVZsG496XIS8k2"
 # -----------------------------------------
 
 # --- Download files if they don't exist ---
@@ -73,3 +73,4 @@ if uploaded_file is not None:
     predicted_class_name = le.inverse_transform([predicted_class_index])
 
     st.success(f"The model predicts this is a: **{predicted_class_name[0]}**")
+
